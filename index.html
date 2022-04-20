@@ -9,7 +9,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N2STZQV');</script>
 <!-- End Google Tag Manager -->
         
-        
+        var up = document.getElementById('IFT_UP');
+            var url = new URL("https://iftykar.github.io/impctdemo/");
+            up.innerHTML = url;
+            var down = document.getElementById('IFT_DOWN');
+              
+            function IFT_Fun() {
+                var query = new URLSearchParams({
+  name : "ifty", 
+  email : "ifty@email.com",
+});
+//query.append("KEY", "VALUE"); 
+ 
+var url = "https://iftykar.github.io/impctdemo/" + query.toString();
+console.log(url);
+var params = new URLSearchParams(url.search)
+
+const pvar = new URLSearchParams(url)
+for (const param of pvar) {
+  console.log(param)
+}
         
         <title> 
             Iftys super fun test page
