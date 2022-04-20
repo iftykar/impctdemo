@@ -36,7 +36,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
           
         <script>
-            var query = new URLSearchParams({
+             var up = document.getElementById('IFT_UP');
+            var url = new URL("https://iftykar.github.io/impctdemo/");
+            up.innerHTML = url;
+            var down = document.getElementById('IFT_DOWN');
+              
+            function IFT_Fun() {
+                var query = new URLSearchParams({
   name : "ifty", 
   email : "ifty@email.com",
 });
@@ -50,6 +56,10 @@ const pvar = new URLSearchParams(url)
 for (const param of pvar) {
   console.log(param)
 }
+            
+            
+            
+            
         </script> 
     </body> 
 </html>                    
