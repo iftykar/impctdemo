@@ -36,28 +36,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </p>
           
         <script>
-             var up = document.getElementById('IFT_UP');
+            var up = document.getElementById('IFT_UP');
             var url = new URL("https://iftykar.github.io/impctdemo/");
             up.innerHTML = url;
             var down = document.getElementById('IFT_DOWN');
               
             function IFT_Fun() {
-                var query = new URLSearchParams({
-  name : "ifty", 
-  email : "ifty@email.com",
-});
-//query.append("KEY", "VALUE"); 
- 
-var url = "https://iftykar.github.io/impctdemo/" + query.toString();
-console.log(url);
-var params = new URLSearchParams(url.search)
-
-const pvar = new URLSearchParams(url)
-for (const param of pvar) {
-  console.log(param)
-}
- window.location.href = url
-            }           
-</script> 
+                url.searchParams.set('name', 'ifty');
+                url.searchParams.set('email', 'ifty@email.com');
+                down.innerHTML = url;
+            }
+        </script> 
     </body> 
 </html>                    
