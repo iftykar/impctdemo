@@ -1,0 +1,51 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGGKZBJ');</script>
+<!-- End Google Tag Manager -->
+        <title> 
+            Iftys super fun test page
+        </title>     
+    </head> 
+      
+    <body style = "text-align:center;">
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGGKZBJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+           
+        <h1 style = "color:green;" > 
+            This page is for demo purposes 
+        </h1>
+          
+        <p id = "IFT_UP" style = 
+            "font-size: 15px; font-weight: bold;">
+        </p>
+          
+        <button onclick = "IFT_Fun()">
+            Add Parameter
+        </button>
+          
+        <p id = "IFT_DOWN" style =
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var up = document.getElementById('IFT_UP');
+            var url = new URL("https://iftykar.github.io/impact/");
+            up.innerHTML = url;
+            var down = document.getElementById('IFT_DOWN');
+              
+            function IFT_Fun() {
+                url.searchParams.set('name', 'ifty');
+                url.searchParams.set('email', 'ifty@email.com');
+                down.innerHTML = url;
+            }
+        </script> 
+    </body> 
+</html>                    
